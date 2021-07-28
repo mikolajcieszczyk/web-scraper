@@ -1,0 +1,29 @@
+{
+  "name": "web-scraper",
+  "version": "1.0.0",
+  "description": "web scraper",
+  "main": "scraper.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikolajcieszczyk/web-scraper.git"
+  },
+  "keywords": [
+    "web",
+    "scraper"
+  ],
+  "author": "mc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikolajcieszczyk/web-scraper/issues"
+  },
+  "homepage": "https://github.com/mikolajcieszczyk/web-scraper#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.10",
+    "nodemon": "^2.0.12",
+    "puppeteer": "^10.1.0"
+  }
+}

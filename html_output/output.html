@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scraping output</title>
+  </head>
+  <body>
+    <h1 class="title"></h1>
+    <p class="content"></p>
+    <small></small>
+    <script>
+      const title = document.querySelector(".title");
+      const content = document.querySelector(".content");
+      const citation = document.querySelector("small");
+
+      fetch("../json_output/scrapped-data.json")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data[0].citation);
+          title.innerText = data[0].title;
+          document.title = data[0].title;
+          content.innerText = data[0].articleContent;
+          citation.innerText = data[0].citation;
+        })
+        .catch((err) => console.error(err));
+    </script>
+  </body>
+</html>

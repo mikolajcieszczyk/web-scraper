@@ -1,2 +1,3 @@
 # web-scraper
-web scraper with JS/Node
+
+web scraper with typescript/node
