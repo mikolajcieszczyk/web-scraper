@@ -1,0 +1,9 @@
+{
+    "baseUrl": "https://pl.wikipedia.org/wiki/ORP_Mewa_(1966)",
+    "selectors": {
+      "title": "#firstHeading",
+      "articleContent": ".mw-parser-output > p",
+      "citation": ".citation"
+    }
+  }
+  
